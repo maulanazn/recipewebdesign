@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header #title, #title-motto {
+    font-size: 30px;
+    color: #EFC81A;
+    line-height: 75px;
+}
+
+header #info {
+    font-size: 18px;
+    color: #8692A6;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.label-name, .label-email, .label-password {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+input[name="name"], input[name="email"], input[name="password"] {
+    padding: 12px 125px 12px 125px;
+}
+
+input[name="name"]::placeholder, input[name="email"]::placeholder, input[name="password"]::placeholder {
+    padding: 12px 125px 12px 125px;
+}
+
+.agree-terms {
+    font-size: 16px;
+    color: #696F79;
+}
+
+.question-text {
+    text-align: center;
+    color: #999999;
+}
+
+.question-text .link {
+    color:#EFC81A; 
+}
