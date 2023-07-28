@@ -13,28 +13,29 @@
 }
 
 .search-bar, input[name="menu"] {
-    padding-left: 5vh;
+    padding-left: 7vh;
 }
 
 .card-recipe {
-    margin-left: 38vh;
+    margin: 0 0 0 17vh;
+    overflow: hidden;
 }
 
 .recipe-info {
-    margin: -110vh 0 0 190vh;
+    margin: -47vh 0 10vh 80vh;
 }
 
 .ingredient {
     text-rendering: optimizeSpeed;
     text-align: start;
-    font-size: 6vh;
-    margin: 0 0 0 -25vh;
+    font-size: 3vh;
+    margin: 0 0 0 -13vh;
 }
 
 .reaction-row {
     background-color: #EFC81A;
-    width: 105vh;
-    height: 10vh;
+    width: 50vh;
+    height: 5vh;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -49,4 +50,34 @@
     flex-direction: row;
     background-color: transparent;
     gap: 15px;
+}
+
+.pagination, .button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    color: #000000;
+}
+
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: DarkSalmon;
+    color: black;
+}
+
+footer, .footer-nav {
+    background-color: DarkSalmon;
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: DarkSalmon;
+    color: black;
+    margin-left: 150vh;
+    margin-top: -5vh;
 }
