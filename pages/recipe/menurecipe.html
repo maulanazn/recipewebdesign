@@ -6,30 +6,46 @@
     <title>Search Recipe</title>
     <link rel="stylesheet" href="../../assets/css/menurecipe.css">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <style>
+        #photo-profile {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: transparent;
+        }
+    </style>
 </head>
 <body>
-    <nav class="d-flex container justify-content-start">
-        <a href="../auth/register.html">Register</a>
-        <a href="../auth/login.html">Login</a>
-        <a href="#">Search Menu</a>
-    </nav>
-    <nav class="d-flex container justify-content-end">
-        <img width="50" src="../../assets/images/elephant.png" alt="Elephant profile">
-        <p class="cols-3">Mr. Elephant</p>
-        <a class="cols-3" href="../../index.html">Logout</a>
+    <nav class="container-fluid row pt-3">
+        <a class="col-2 btn" href="../auth/register.html">Register</a>
+        <a class="col-2 btn" href="../auth/login.html">Login</a>
+        <a class="col-2 btn" href="#">Search Menu</a>
+        <div class="mini-profile col-2 offset-md-4 row">
+            <mark class="col">
+                <img width="50" id="photo-profile" src="../../assets/images/elephant.png" alt="Elephant profile">
+            </mark>
+            <mark class="col">
+                <p class="col">Mr. Elephant</p>
+                <a class="fw-bold" href="../../index.html">Logout</a>
+            </mark>
+        </div>
     </nav>
 
-    <header>
-        <h1>Discover Recipe & Delicious Food</h1>
-        <input type="search" name="menu" id="menu">
-        <a href="#" role="link">Search</a>
+    <header class="title-top container">
+        <h1 class="">Discover Recipe</h1>
+        <h1>& Delicious Food</h1>
     </header>
 
-    <section class="category">
-        <a role="link" href="">New</a>
-        <a role="link" href="">Popular</a>
-        <a role="link" href="">Vegetarian</a>
-        <a role="link" href="">Breakfast</a>
+    <mark class="m-5">
+        <input type="search" name="menu" id="menu">
+        <a href="#" class="btn btn-warning" role="link">Search</a>
+    </mark>
+
+    <section class="container category">
+        <a role="link" class="btn btn-warning" href="">New</a>
+        <a role="link" class="btn btn-warning" href="">Popular</a>
+        <a role="link" class="btn btn-success" href="">Vegetarian</a>
+        <a role="link" class="btn btn-success" href="">Breakfast</a>
     </section>
 
     <section class="menu-lists">

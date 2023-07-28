@@ -5,3 +5,13 @@
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif !important;
 }
+
+.title-top {
+    margin-top: -5vh;
+}
+
+.category {
+    margin-top: 3vh;
+    margin-bottom: 15vh;
+    padding-left: 10vh;
+}
