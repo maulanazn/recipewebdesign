@@ -14,7 +14,7 @@
     </header>
 
     <section class="form">
-        <form action="../../index.html" method="post">
+        <form action="login.html" method="post">
             <label class="label-name" for="name">
                 Name
             </label>
@@ -26,7 +26,7 @@
                 Email
             </label>
             <br>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="email" name="email" id="email" placeholder="Enter email address">
             <br>
            
             <label class="label-password" for="password">
@@ -35,9 +35,10 @@
             <br>
             <input type="text" name="password" id="password" placeholder="Password">
             <br>
-           
-            <input type="checkbox" name="agree-terms" id="name" placeholder="Name">
-            <label class="agree-terms" for="name">
+            
+            <label class="check-box">
+                <span class="checkmark"></span>
+                <input type="checkbox" name="agree-terms" id="agree-terms">
                 I agree to terms & conditions
             </label>
             <br>
@@ -45,6 +46,6 @@
             <button type="submit">Register Account</button>
         </form>
     </section>
-    <p class="question-text">Already have account? <a class="link" href="#">Log in Here</a></p>
+    <p class="question-text">Already have account? <a class="link" href="login.html">Log in Here</a></p>
 </body>
 </html>
