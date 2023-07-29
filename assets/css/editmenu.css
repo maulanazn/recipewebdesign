@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.profile-wrapper #photo-profile {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    margin-top: 10vh;
+}
+
+form #image-upload::-webkit-file-upload-button {
+    visibility:hidden;
+}
+
+form #image-upload {
+    width: 100vh;
+    height: 50vh;
+    margin-right: 49vh;
+    background-image: url('../images/nasi\ goreng.jpeg');
+    background-clip: content-box;
+    background-size: contain;
+}
+
+form #image-upload::before {
+    content: 'Change Photo';
+    display: inline-block;
+    padding: 5px 8px;
+    height: 50px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    cursor: pointer;
+    background-color: rgb(92, 185, 221);
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    border: 1px solid rgb(92, 185, 221);
+}
+
+form #image-upload:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+form #title {
+    width: 150vh;
+    height: 50px;
+    border: 1px solid #8692A6;
+    border-radius: 4px;
+    padding: 2vh;
+}
+
+form #ingredient {
+    width: 150vh;
+    height: 50vh;
+    border: 1px solid #8692A6;
+    border-radius: 4px;
+}
+
+form #category {
+    width: 140px;
+    height: 50px;
+    border: 1px solid #8692A6;
+    border-radius: 4px;
+    margin-right: 129vh;
+    color: #8692A6;
+    padding: 1vh;
+}
+
+form button {
+    background-color: #EFC81A;
+    border: 1px solid #EFC81A;
+    border-radius: 5px;
+    margin-top: 100px;
+    width: 400px;
+    height: 50px;
+}
+
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: #EFC81A;
+    color: black;
+}
+
+footer, .footer-nav {
+    background-color: #EFC81A;
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: #EFC81A;
+    color: black;
+    margin-left: 150vh;
+    margin-top: -5vh;
+}

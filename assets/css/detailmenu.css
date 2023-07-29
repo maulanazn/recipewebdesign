@@ -11,27 +11,26 @@
     margin-left: 3vh;
 }
 
-.recipe-detail-content #recipe-img {
-    margin-left: 68vh;
-}
-
-.recipe-detail-content .detail-title {
-    margin-bottom: 10vh;
-    text-align: center;
+.recipe-detail-content {
+    display: grid;
+    place-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .recipe-detail-content .ingredient {
     font-size: 20px;
-    margin-left: 48vh;
+    margin-left: -58vh;
     margin-top: 8vh;
     font-family: 'Poppins';
 }
 
 .reaction {
     display: flex;
-    gap: 50px;
-    margin-left: 50vh;
-    margin-bottom: 1vh;
+    justify-content: start;
+    align-items: start;
+    margin-left: 230px;
+    gap: 12px;
 }
 
 .reaction i:nth-child(1) {
