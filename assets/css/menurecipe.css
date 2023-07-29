@@ -6,6 +6,11 @@
     background-color: #FFFFFF;
 }
 
+.profile-wrapper #photo-profile {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
 .category {
     margin-top: 3vh;
     margin-bottom: 15vh;
@@ -65,18 +70,18 @@ footer, .footer-motto, .footer-sub-motto {
     text-align: center;
     margin-top: 2vh;
     padding: 20px;
-    background-color: DarkSalmon;
+    background-color: #EFC81A;
     color: black;
 }
 
 footer, .footer-nav {
-    background-color: DarkSalmon;
+    background-color: #EFC81A;
     color: black;
     margin-top: 20vh;
 }
 
 footer .footer-company {
-    background-color: DarkSalmon;
+    background-color: #EFC81A;
     color: black;
     margin-left: 150vh;
     margin-top: -5vh;

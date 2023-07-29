@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding Menu</title>
+    <link rel="stylesheet" href="../../assets/css/addmenu.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
 </head>
 <body>
-    
+    <nav class="container-fluid row pt-3">
+        <a class="col-2 btn" href="../../index.html">Home</a>
+        <a class="col-2 btn" href="../recipe/menurecipe.html">Search Menu</a>
+        <a class="col-2 btn" href="#">Profile</a>
+        <div class="mini-profile col-2 offset-md-4 row">
+        <div class="vr bg-warning" style="padding: 2px;"></div>
+            <mark class="col bg-transparent profile-wrapper">
+                <img width="50" id="photo-profile" src="../../assets/images/elephant.png" alt="Elephant profile">
+            </mark>
+            <mark class="col bg-transparent">
+                <p class="col">Mr. Elephant</p>
+                <a class="fw-bold" href="../../index.html">Logout</a>
+            </mark>
+        </div>
+    </nav>
+
+    <form action="#">
+        <input type="file" name="image-path" id="image-upload">
+        <br>
+        <input type="text" name="title" id="title" placeholder="Title">
+        <br>
+        <input type="text" name="ingredient" id="ingredient" placeholder="Ingredients">
+        <br>
+        <select name="category" id="category">
+            <option>Category</option>
+            <option value="Main course">Main course</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+        <button type="submit">Post</button>
+    </form>
+
+    <footer>
+        <h1 class="footer-motto">Eat, Cook, Repeat</h1>
+        <p class="footer-sub-motto">Share Your Best Recipe By Uploading Here !</p>
+        <nav class="container-fluid footer-nav">
+            <a class="btn" href="#">Product</a>
+            <a class="btn" href="#">Company</a>
+            <a class="btn" href="#">Learn More</a>
+            <a class="btn" href="#">Get in Touch</a>
+        </nav>
+        <h5 class="footer-company">Arkademy</h5>
+    </footer>
+
+    <script src="../../assets/js/addmenu.js"></script>
 </body>
 </html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.profile-wrapper #photo-profile {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.recipe-detail-content #recipe-img {
+    margin-left: 68vh;
+}
+
+.recipe-detail-content .detail-title {
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.recipe-detail-content .ingredient {
+    font-size: 20px;
+    margin-left: 48vh;
+    margin-top: 8vh;
+    font-family: 'Poppins';
+}
+
+.reaction {
+    display: flex;
+    gap: 50px;
+    margin-left: 50vh;
+    margin-bottom: 1vh;
+}
+
+.reaction i:nth-child(1) {
+    background-color: #FFFFFF;
+    border: 1px solid #EFC81A;
+    border-radius: 15px;
+    padding: 2vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+.reaction i:nth-child(2) {
+    background-color: #FFFFFF;
+    border: 1px solid #EFC81A;
+    border-radius: 15px;
+    padding: 1vh;
+    width: 8vh;
+}
+
+.horizontal-line {
+    height:10px;
+    width: 70vw; 
+    border-width:0;
+    background-color:#EFC81A;
+    margin-left: 35vh;
+}
+
+.comment {
+    margin-left: 75vh;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+    font-size: 18px;
+}
+
+form {
+    margin-left: 35vh;
+    margin-top: 10vh;
+}
+
+form #comment {
+    border-radius: 10px;
+    width: 813px;
+    height: 252px;
+    margin-bottom: 5vh;
+    border: 0px solid gray;
+}
+
+form button {
+    background: #FFB167;
+    width: 70vh;
+    height: 10vh;
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: #EFC81A;
+    color: black;
+}
+
+footer, .footer-nav {
+    background-color: #EFC81A;
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: #EFC81A;
+    color: black;
+    margin-left: 150vh;
+    margin-top: -5vh;
+}
