@@ -67,3 +67,148 @@
 .card-recipe .recipe-info {
     font-size: 3vh;
 }
+
+.recipes-popular .img-recipe-1 {
+    width: 100vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 314.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-2 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 315.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-3 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 316.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-4 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 317.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-5 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 318.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-6 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 319.jpg');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-1 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-2 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-3 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-4 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-5 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-6 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipe-popular-gap {
+    margin-top: 4vh;
+}
+
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: var(--yellow);
+    color: black;
+}
+
+footer, .footer-nav {
+    background-color: var(--yellow);
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: var(--yellow);
+    color: black;
+    margin-left: 150vh;
+    margin-top: -5vh;
+}
