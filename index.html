@@ -4,16 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <h1>Recipe</h1>
+    <nav class="container-fluid row pt-3 nav-top">
+        <a class="col-2 btn" href="pages/auth/register.html">Register</a>
+        <a class="col-2 btn" href="pages/auth/login.html">Login</a>
+        <a class="col-2 btn" href="pages/recipe/menurecipe.html">Search menu</a>
+    </nav>
 
-    <header>
-        <ul>
-            <li><a href="pages/auth/register.html">Register</a></li>
-            <li><a href="pages/auth/login.html">Login</a></li>
-            <li><a href="pages/recipe/menurecipe.html">Search menu</a></li>
-        </ul>
-    </header>
+    <section class="search-box">
+        <h1>
+            Discover Recipe <br>
+            & Delicious Food
+        </h1>
+        <nav class="navbar bg-body-tertiary search-bar">
+            <form class="container-fluid">
+              <div class="input-group">
+                <i class="bi bi-search input-group-text"></i>
+                <input type="text" class="form-control" placeholder="Search Delicious Food" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </form>
+        </nav>
+    </section>
+    
+    <section class="image-box-1">
+        <div class="yellow-background">
+            <img src="assets/images/nasi goreng.jpeg" decoding="async" alt="nasi goreng">
+        </div>
+    </section>
+
+    <nav class="col-4 offset-md-1 row" style="margin-top: -5vh;">
+        <div class="vr bg-warning" style="padding: 2px;"></div>
+        <mark class="col bg-transparent profile-wrapper">
+            <h1>Popular For You !</h1>
+        </mark>
+    </nav>
+
+    <section class="bg-transparent card-recipe">
+        <a class="col-md-4" href="../recipe/detailmenu.html">
+            <img src="../../assets/images/nasi goreng.jpeg" loading="lazy" decoding="async" width="500" alt="Egg fried rice">
+        </a>
+        <section class="col-md-8 bg-transparent recipe-info">
+            <h1>Egg Fried Rice</h1>
+            <p class="ingredient">
+                Ingredients: <br>
+                chicken, garlic, salt, <br>
+                soy sauce, spicy sauce, <br>
+                pepper.
+            </p>
+            <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
+        </section>
+    </section>
+
+    <nav class="col-4 offset-md-1 row" style="margin-top: -5vh;">
+        <div class="vr bg-warning" style="padding: 2px;"></div>
+        <mark class="col bg-transparent profile-wrapper">
+            <h1>New Recipe</h1>
+        </mark>
+    </nav>
+    <section class="bg-transparent card-recipe">
+        <a class="col-md-4" href="../recipe/detailmenu.html">
+            <img src="../../assets/images/nasi kuning.jpeg" loading="lazy" decoding="async" width="500" alt="Egg fried rice">
+        </a>
+        <section class="col-md-8 bg-transparent recipe-info">
+            <h1>Nasi Kuning</h1>
+            <p class="ingredient">
+                Ingredients: <br>
+                chicken, garlic, salt, <br> 
+                ginger, galangal, turmeric, <br>
+                chili.
+            </p>
+            <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
+        </section>
+    </section>
 </body>
 </html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+:root {
+    --yellow: #EFC81A;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins' !important;
+    background-color: #FFFFFF;
+}
+
+.search-box h1 {
+    margin-left: 20vh;
+    margin-top: 30vh;
+    font-size: 6vh;
+    letter-spacing: 0.5vh;
+    font-weight: 600;
+    color: #2E266F;
+}
+
+.search-box .search-bar {
+    width: 30%;
+    left: 18vh;
+}
+
+.image-box-1 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 45vh;
+    margin-left: 15vh;
+}
+
+.image-box-1 .yellow-background {
+    z-index: 1000;
+    background-color: #EFC81A;
+    width: 360px;
+    height: 820px;
+    margin-top: -110vh;
+    margin-right: 0.1vh;
+}
+
+.image-box-1 .yellow-background img {
+    margin-top: 30vh;
+    margin-left: -35vh;
+    border-radius: 10px;
+}
+
+.popular-food-1 .popular-text {
+    margin-left: 10%;
+}
+
+.card-recipe, .recipe-info {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    margin: 10vh 6vh 10vh 18vh;
+    overflow: hidden;
+}
+
+.card-recipe a img {
+    border-radius: 10px;
+}
+
+.card-recipe .recipe-info {
+    font-size: 3vh;
+}
