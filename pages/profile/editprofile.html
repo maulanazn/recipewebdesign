@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <link rel="stylesheet" href="../../assets/css/editprofile.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+    <style>
+        #profile-image {
+            height: 250px;
+            width: 250px;
+            border-radius: 76px;
+            background-color: transparent;
+            margin-top: 25vh;
+            margin-left: 85vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid row pt-3 nav-top">
+        <a class="col-2 btn" href="../../index.html">Home</a>
+        <a class="col-2 btn" href="../recipe/addmenu.html">Add Recipe</a>
+        <a class="col-2 btn" href="#">Search Menu</a>
+        <div class="mini-profile col-2 offset-md-4 row">
+        <div class="vr bg-warning" style="padding: 2px;"></div>
+            <mark class="col bg-transparent profile-wrapper">
+                <a href="../profile/detailprofile.html">
+                    <img width="50" loading="lazy" decoding="async" id="photo-profile" src="../../assets/images/elephant.jpeg" alt="Elephant profile">
+                </a>
+            </mark>
+            <mark class="col bg-transparent logout-detail">
+                <p class="col">Mr. Elephant</p>
+                <a class="fw-bold" role="button" id="logout-btn">Logout</a>
+            </mark>
+        </div>
+    </nav>
+
+    <section class="change-profile-section">
+        <img src="../../assets/images/elephant.jpeg" width="250" id="profile-image" alt="">
+    
+        <form action="#">
+            <div class="photo-file">
+                <input type="file" accept="image/*" name="image-path" id="image-path">
+                <label for="image-path">Change Profile Picture</label>
+            </div>
+            <br>
+            <label for="name">
+                Name <br>
+                <input type="text" name="name" id="name" value="Mr. Elephant">
+            </label>
+            <br>
+            <label for="email">
+                Email <br>
+                <input type="email" name="email" id="email" value="mrelephant.mit@edu.com">
+            </label>
+            <br>
+            <button type="submit">Update Profile</button>
+        </form>
+    
+        <p class="question-text">Already have account? <a class="link" href="login.html">Log in Here</a></p>
+    </section>
+
+    <dialog id="favDialog">
+        <section>
+          <h1 style="color: #EFC81A; text-align: center;">You want to logout?</h1>
+          <div class="d-grid gap-2">
+            <button class="btn btn-warning btn-lg" id="confirmBtn">Ok</button>
+            <button class="btn btn-secondary btn-lg" id="cancelBtn">Cancel</button>
+          </div>
+        </section>
+    </dialog>
+
+    <script src="../../assets/js/logout.js"></script>
+</body>
+</html>

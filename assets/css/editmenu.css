@@ -17,50 +17,39 @@ form {
     margin-top: 10vh;
 }
 
-form #image-upload::-webkit-file-upload-button {
-    visibility:hidden;
-}
-
-form #image-upload {
+form .photo-file {
     width: 100vh;
     height: 50vh;
     margin-right: 49vh;
     background-image: url('../images/nasi\ goreng.jpeg');
+    border-radius: 10px;
     background-clip: content-box;
-    background-size: contain;
+    background-repeat: space;
+    background-size: cover;
 }
 
-form #image-upload::before {
-    content: 'Change Photo';
-    display: inline-block;
-    padding: 5px 8px;
-    height: 50px;
-    margin-left: 200px;
+form .photo-file input[type="file"] {
+    display: none;
+}
+
+form .photo-file label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    cursor: pointer;
-    background-color: rgb(92, 185, 221);
-    border: 1px solid #fff;
-    border-radius: 3px;
-    text-shadow: 1px 1px #fff;
-    font-weight: 700;
-    font-size: 10pt;
-    color: #FFFFFF;
-    letter-spacing: 1px;
-    border: 1px solid rgb(92, 185, 221);
-}
-
-form #image-upload:active::before {
-    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    margin-top: 20vh;
+    margin-left: 26vh;
+    width: 50vh;
+    height: 7vh;
+    background-color: #4f8cf5;
+    color: white;
+    border-radius: 6px;
 }
 
 form #title {
     width: 150vh;
     height: 50px;
     border: 1px solid #8692A6;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 2vh;
 }
 
@@ -68,17 +57,22 @@ form #ingredient {
     width: 150vh;
     height: 50vh;
     border: 1px solid #8692A6;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 form #category {
     width: 140px;
     height: 50px;
     border: 1px solid #8692A6;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-right: 129vh;
     color: #8692A6;
     padding: 1vh;
+    appearance: none;
+}
+
+form #title:focus, form #ingredient:focus, form #category:focus {
+    outline: none;
 }
 
 form button {

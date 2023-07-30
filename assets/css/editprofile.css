@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+:root {
+    --yellow: #EFC81A;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.profile-wrapper #photo-profile {
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.change-profile-section {
+    margin-top: -10vh;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    margin-top: 1vh;
+    margin-left: 10vh;
+}
+
+form .photo-file input[type="file"] {
+    display: none;
+}
+
+form .photo-file label {
+    color: black;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+}
+
+form #name {
+    width: 80vh;
+    height: 8vh;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    color: #383636;
+    padding: 2vh;
+}
+
+form #email {
+    width: 80vh;
+    height: 8vh;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    color: #383636;
+    padding: 2vh;
+}
+
+form button {
+    width: 80vh;
+    height: 8vh;
+    color: white;
+    background-color: #EFC81A;
+    border: 1px solid #EFC81A;
+    border-radius: 4px;
+}
+
+.question-text {
+    text-align: center;
+    font-size: 13px;
+    color: #999999;
+    margin-right: 35vh;
+    margin-top: 5vh;
+}
+
+.question-text .link {
+    color:#EFC81A; 
+    font-size: 13px;
+}

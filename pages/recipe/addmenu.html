@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css"  media="screen">
 </head>
 <body>
-    <nav class="container-fluid row pt-3">
+    <nav class="container-fluid row pt-3 nav-top">
         <a class="col-2 btn" href="../../index.html">Home</a>
         <a class="col-2 btn" href="../recipe/menurecipe.html">Search Menu</a>
-        <a class="col-2 btn" href="#">Profile</a>
+        <a class="col-2 btn" href="../profile/detailprofile.html">Profile</a>
         <div class="mini-profile col-2 offset-md-4 row">
         <div class="vr bg-warning" style="padding: 2px;"></div>
             <mark class="col bg-transparent profile-wrapper">
@@ -19,15 +19,18 @@
                     <img width="50" id="photo-profile" src="../../assets/images/elephant.jpeg" alt="Elephant profile">
                 </a>
             </mark>
-            <mark class="col bg-transparent">
+            <mark class="col bg-transparent logout-detail">
                 <p class="col">Mr. Elephant</p>
-                <a class="fw-bold" href="../../index.html">Logout</a>
+                <a class="fw-bold" role="dialog" id="logout-btn">Logout</a>
             </mark>
         </div>
     </nav>
 
     <form action="#">
-        <input type="file" name="image-path" id="image-upload">
+        <div class="photo-file">
+            <input type="file" name="image-path" id="image-path">
+            <label for="image-path">Add Photo</label>
+        </div>
         <br>
         <input type="text" name="title" id="title" placeholder="Title">
         <br>
@@ -54,6 +57,17 @@
         <h5 class="footer-company">Arkademy</h5>
     </footer>
 
+    <dialog id="favDialog">
+        <section>
+          <h1 style="color: #EFC81A; text-align: center;">You want to logout?</h1>
+          <div class="d-grid gap-2">
+            <button class="btn btn-warning btn-lg" id="confirmBtn">Ok</button>
+            <button class="btn btn-secondary btn-lg" id="cancelBtn">Cancel</button>
+          </div>
+        </section>
+    </dialog>
+
     <script src="../../assets/js/addmenu.js"></script>
+    <script src="../../assets/js/logout.js"></script>
 </body>
 </html>

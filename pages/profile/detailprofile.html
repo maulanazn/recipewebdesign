@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" media="screen">
 </head>
 <body>
-    <nav class="container-fluid row pt-3">
+    <nav class="container-fluid row pt-3 nav-top">
         <a class="col-2 btn" href="../../index.html">Home</a>
         <a class="col-2 btn" href="../recipe/addmenu.html">Add Recipe</a>
         <a class="col-2 btn" href="#">Search Menu</a>
         <div class="mini-profile col-2 offset-md-4 row">
-        <div class="vr bg-warning" style="padding: 2px;"></div>
+            <div class="vr bg-warning" style="padding: 2px;"></div>
             <mark class="col bg-transparent profile-wrapper">
                 <a href="../profile/detailprofile.html">
                     <img width="50" loading="lazy" decoding="async" id="photo-profile" src="../../assets/images/elephant.jpeg" alt="Elephant profile">
                 </a>
             </mark>
-            <mark class="col bg-transparent">
+            <mark class="col bg-transparent logout-detail">
                 <p class="col">Mr. Elephant</p>
-                <a class="fw-bold" href="../../index.html">Logout</a>
+                <a class="fw-bold" id="logout-btn" role="button">Logout</a>
             </mark>
         </div>
     </nav>
@@ -29,7 +29,9 @@
     <nav class="col-2 offset-md-2 row" style="margin-top: 5vh;">
         <div class="vr bg-warning" style="padding: 2px;"></div>
         <mark class="col bg-transparent profile-wrapper">
-            <img width="50" id="photo-profile" src="../../assets/images/elephant.jpeg" alt="Elephant profile">
+            <a href="../profile/editprofile.html">
+                <img width="50" id="photo-profile" src="../../assets/images/elephant.jpeg" alt="Elephant profile">
+            </a>
         </mark>
         <mark class="col bg-transparent">
             <p class="col">Mr. Elephant</p>
@@ -247,6 +249,17 @@
         <h5 class="footer-company">Arkademy</h5>
     </footer>
 
+    <dialog id="favDialog">
+        <section>
+          <h1 style="color: #EFC81A; text-align: center;">You want to logout?</h1>
+          <div class="d-grid gap-2">
+            <button class="btn btn-warning btn-lg" id="confirmBtn">Ok</button>
+            <button class="btn btn-secondary btn-lg" id="cancelBtn">Cancel</button>
+          </div>
+        </section>
+    </dialog>
+
     <script src="../../assets/js/detailprofile.js"></script>
+    <script src="../../assets/js/logout.js"></script>
 </body>
 </html>
