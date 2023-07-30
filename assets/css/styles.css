@@ -59,7 +59,7 @@
     margin-top: 3vh;
     margin-left: -1vh;
     border-radius: 10px;
-    filter: drop-shadow(30px -40px 4px #EFC81A)
+    filter: drop-shadow(30px 40px 4px #EFC81A)
 }
 
 .popular-food-1 .popular-text {
