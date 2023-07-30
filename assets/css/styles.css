@@ -34,18 +34,32 @@
 }
 
 .image-box-1 .yellow-background {
-    z-index: 1000;
     background-color: #EFC81A;
     width: 360px;
     height: 820px;
     margin-top: -110vh;
     margin-right: 0.1vh;
+    z-index: 1000;
 }
 
 .image-box-1 .yellow-background img {
     margin-top: 30vh;
     margin-left: -35vh;
     border-radius: 10px;
+}
+
+.card-recipe .yellow-background-1 img {
+    margin-top: 3vh;
+    margin-left: -1vh;
+    border-radius: 10px;
+    filter: drop-shadow(30px 30px 4px #EFC81A)
+}
+
+.card-recipe .yellow-background-2 img {
+    margin-top: 3vh;
+    margin-left: -1vh;
+    border-radius: 10px;
+    filter: drop-shadow(30px -40px 4px #EFC81A)
 }
 
 .popular-food-1 .popular-text {
