@@ -239,7 +239,7 @@
 
     .search-box h1 {
         margin-left: 3vh;
-        margin-top: 30vh;
+        margin-top: 6vh;
         font-size: 4vh;
         letter-spacing: 0.5vh;
         font-weight: 600;
@@ -249,6 +249,7 @@
     .search-box .search-bar {
         width: 60%;
         left: 2vh;
+        margin-bottom: 10vh;
     }
 
     .image-box-1 .yellow-background {
@@ -261,14 +262,14 @@
     
     .card-recipe .yellow-background-1 img {
         margin-top: 3vh;
-        margin-left: -1vh;
+        margin-left: 1vh;
         border-radius: 10px;
         filter: drop-shadow(30px 30px 4px #EFC81A)
     }
     
     .card-recipe .yellow-background-2 img {
         margin-top: 3vh;
-        margin-left: -1vh;
+        margin-left: 1vh;
         border-radius: 10px;
         filter: drop-shadow(30px 40px 4px #EFC81A)
     }
@@ -289,14 +290,22 @@
         display: none;
     }
 
-    footer {
-        width: 53.5vh;
+    .recipe-popular-group {
+        display: none;
     }
 
-    footer .footer-nav {
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
         background-color: var(--yellow);
         color: black;
-        margin-top: 2vh;
+    }
+
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
     }
 
     footer .footer-company {
