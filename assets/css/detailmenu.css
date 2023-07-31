@@ -6,103 +6,213 @@
     font-family: 'Poppins';
 }
 
-.profile-wrapper #photo-profile {
-    margin-top: 3vh;
-    margin-left: 3vh;
+@media (max-width: 600px) {
+    .profile-wrapper #photo-profile {
+        margin-top: 3vh;
+        margin-left: 3vh;
+    }
+
+    .profile {
+        visibility: hidden;
+    }
+
+    .reaction-count {
+        visibility: hidden;
+    }
+
+    .recipe-detail-content {
+        display: grid;
+        place-items: center;
+        margin-top: -25vh;
+        margin-left: -5vh;
+    }
+
+    .recipe-detail-content a img {
+        width: 35vh;
+        height: 20vh;
+    }
+
+    .recipe-detail-content .ingredient {
+        font-size: 20px;
+        margin-left: -5vh;
+        margin-top: 3vh;
+        font-family: 'Poppins';
+    }
+
+    .reaction {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-left: 20px;
+        gap: 12px;
+    }
+
+    .reaction i:nth-child(1) {
+        background-color: #FFFFFF;
+        border: 1px solid #EFC81A;
+        border-radius: 15px;
+        padding: 2vh;
+        width: 6vh;
+        height: 5.5vh;
+    }
+
+    .reaction i:nth-child(2) {
+        background-color: #FFFFFF;
+        border: 1px solid #EFC81A;
+        border-radius: 15px;
+        padding: 1vh;
+        width: 6vh;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .comment {
+        visibility: hidden;
+    }
+
+    .comment-section .profile-wrapper img, .comment-section mark {
+        display: none;
+    }
+
+    form {
+        margin-left: 3vh;
+        margin-top: 10vh;
+    }
+
+    form #comment {
+        border-radius: 10px;
+        width: 413px;
+        height: 252px;
+        margin-bottom: 5vh;
+        border: 0px solid gray;
+    }
+
+    form button {
+        background: #FFB167;
+        width: 20vh;
+        height: 5vh;
+        color: #ffffff;
+        border: 1px solid white;
+    }
+
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: #EFC81A;
+        color: black;
+    }
+
+    footer, .footer-nav {
+        background-color: #EFC81A;
+        color: black;
+        margin-top: 20vh;
+    }
+
+    footer .footer-company {
+        display: none;
+    }
 }
 
-.recipe-detail-content {
-    display: grid;
-    place-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+@media (min-width: 601px) {
+    .profile-wrapper #photo-profile {
+        margin-top: 3vh;
+        margin-left: 3vh;
+    }
 
-.recipe-detail-content .ingredient {
-    font-size: 20px;
-    margin-left: -58vh;
-    margin-top: 8vh;
-    font-family: 'Poppins';
-}
+    .recipe-detail-content {
+        display: grid;
+        place-items: center;
+    }
 
-.reaction {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin-left: 230px;
-    gap: 12px;
-}
+    .recipe-detail-content .ingredient {
+        font-size: 20px;
+        margin-left: -58vh;
+        margin-top: 8vh;
+        font-family: 'Poppins';
+    }
 
-.reaction i:nth-child(1) {
-    background-color: #FFFFFF;
-    border: 1px solid #EFC81A;
-    border-radius: 15px;
-    padding: 2vh;
-    width: 8vh;
-    height: 8vh;
-}
+    .reaction {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-left: 230px;
+        gap: 12px;
+    }
 
-.reaction i:nth-child(2) {
-    background-color: #FFFFFF;
-    border: 1px solid #EFC81A;
-    border-radius: 15px;
-    padding: 1vh;
-    width: 8vh;
-}
+    .reaction i:nth-child(1) {
+        background-color: #FFFFFF;
+        border: 1px solid #EFC81A;
+        border-radius: 15px;
+        padding: 2vh;
+        width: 8vh;
+        height: 8vh;
+    }
 
-.horizontal-line {
-    height:10px;
-    width: 70vw; 
-    border-width:0;
-    background-color:#EFC81A;
-    margin-left: 35vh;
-}
+    .reaction i:nth-child(2) {
+        background-color: #FFFFFF;
+        border: 1px solid #EFC81A;
+        border-radius: 15px;
+        padding: 1vh;
+        width: 8vh;
+    }
 
-.comment {
-    margin-left: 75vh;
-    margin-top: -10vh;
-    margin-bottom: 10vh;
-    font-size: 18px;
-}
+    .horizontal-line {
+        height:10px;
+        width: 70vw; 
+        border-width:0;
+        background-color:#EFC81A;
+        margin-left: 35vh;
+    }
 
-form {
-    margin-left: 35vh;
-    margin-top: 10vh;
-}
+    .comment {
+        margin-left: 75vh;
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+        font-size: 18px;
+    }
 
-form #comment {
-    border-radius: 10px;
-    width: 813px;
-    height: 252px;
-    margin-bottom: 5vh;
-    border: 0px solid gray;
-}
+    form {
+        margin-left: 35vh;
+        margin-top: 10vh;
+    }
 
-form button {
-    background: #FFB167;
-    width: 70vh;
-    height: 10vh;
-    color: #ffffff;
-    border: 1px solid white;
-}
+    form #comment {
+        border-radius: 10px;
+        width: 813px;
+        height: 252px;
+        margin-bottom: 5vh;
+        border: 0px solid gray;
+    }
 
-footer, .footer-motto, .footer-sub-motto {
-    text-align: center;
-    margin-top: 2vh;
-    padding: 20px;
-    background-color: #EFC81A;
-    color: black;
-}
+    form button {
+        background: #FFB167;
+        width: 70vh;
+        height: 10vh;
+        color: #ffffff;
+        border: 1px solid white;
+    }
 
-footer, .footer-nav {
-    background-color: #EFC81A;
-    color: black;
-    margin-top: 20vh;
-}
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: #EFC81A;
+        color: black;
+    }
 
-footer .footer-company {
-    background-color: #EFC81A;
-    color: black;
-    margin-left: 150vh;
-    margin-top: -5vh;
+    footer, .footer-nav {
+        background-color: #EFC81A;
+        color: black;
+        margin-top: 20vh;
+    }
+
+    footer .footer-company {
+        background-color: #EFC81A;
+        color: black;
+        margin-left: 150vh;
+        margin-top: -5vh;
+    }
 }

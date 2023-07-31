@@ -34,7 +34,6 @@
         margin-left: 15vh;
     }
 
-
     .image-box-1 .yellow-background {
         background-color: #EFC81A;
         width: 360px;
@@ -45,7 +44,7 @@
     }
 
     .image-box-1 .yellow-background img {
-        margin-top: 30vh;
+        margin-top: 20vh;
         margin-left: -35vh;
         border-radius: 10px;
     }
