@@ -28,7 +28,7 @@
 .card-recipe, .recipe-info {
     display: grid;
     grid-column-start: 1;
-    grid-column-start: 7;
+    grid-column-start: 2;
     margin: 10vh 0 10vh 18vh;
     overflow: hidden;
 }
