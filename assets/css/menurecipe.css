@@ -23,10 +23,17 @@
     }
 
     .search-bar, input[name="menu"] {
-        padding-left: 1vh;
+        padding-right: auto;
     }
 
-    
+    .search-bar input[name="menu"] {
+        border: 1px solid #898989;
+        width: auto;
+        height: 3.5vh;
+        border-radius: 6px;
+        color: #898989;
+    }
+
     .card-recipe a img {
         width: 20vh;
         height: 20vh;
@@ -85,6 +92,14 @@
 
     .search-bar, input[name="menu"] {
         padding-left: 7vh;
+    }
+    
+    .search-bar input[name="menu"] {
+        border: 1px solid #898989;
+        width: 62vh;
+        height: 6vh;
+        border-radius: 6px;
+        color: #898989;
     }
 
     .card-recipe, .recipe-info {

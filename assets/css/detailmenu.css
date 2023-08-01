@@ -78,15 +78,15 @@
 
     form {
         margin-left: 3vh;
-        margin-top: 10vh;
+        margin-top: -16vh;
     }
 
     form #comment {
         border-radius: 10px;
-        width: 413px;
+        width: auto;
         height: 252px;
         margin-bottom: 5vh;
-        border: 0px solid gray;
+        border: 1px solid gray;
     }
 
     form button {
