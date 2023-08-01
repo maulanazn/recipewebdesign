@@ -43,20 +43,31 @@
               </label>
             <br>
            
-            <button type="submit" id="showDialog">Register Account</button>
+            <button type="submit" id="registerDialog">Register Account</button>
         </form>
     </section>
     <p class="question-text">Already have account? <a class="link" href="login.html">Log in Here</a></p>
 
-    <dialog id="favDialog">
+    <dialog id="activate-account">
         <section style="margin: 10vh;">
-          <h1 style="color: #EFC81A; text-align: center;">Account has been setup</h1>
-          <p style="color: #8692A6; text-align: center;">Account activated successfully, please login</p>
+          <h1 style="color: #EFC81A; text-align: center;">You're all set!</h1>
+          <p style="color: #8692A6; text-align: center;">Please check your email account for verification</p>
           <div>
             <button id="confirmBtn">Ok</button>
           </div>
         </section>
     </dialog>
+
+    <dialog id="account-activated">
+        <section style="margin: 10vh;">
+          <h1 style="color: #EFC81A; text-align: center;">Account has been setup</h1>
+          <p style="color: #8692A6; text-align: center;">Account activated successfully, please login</p>
+          <div>
+            <button id="okBtn">Ok</button>
+          </div>
+        </section>
+    </dialog>
+
 
     <script src="../../assets/js/register.js"></script>
 </body>

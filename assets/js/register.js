@@ -1,13 +1,25 @@
-const showBtn = document.querySelector('.form form #showDialog');
-const favDialog = document.querySelector("#favDialog");
-const confirmBtn = favDialog.querySelector("#confirmBtn")
+const registerDialog = document.querySelector('.form form #registerDialog');
+const activateAccount = document.querySelector("#activate-account");
+const accountActivated = document.querySelector("#account-activated");
+const confirmBtn = activateAccount.querySelector("#confirmBtn")
+const okBtn = accountActivated.querySelector("#okBtn")
 
-showBtn.addEventListener("click", (e) => {
+registerDialog.addEventListener("click", (e) => {
     e.preventDefault();
-    favDialog.showModal();
+    activateAccount.showModal();
+
 })
 
-confirmBtn.addEventListener('click', () => {
-    favDialog.close()
+confirmBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    activateAccount.close();
+    
+    setTimeout(() => {
+        accountActivated.showModal();
+    }, 3000);
+})
+
+okBtn.addEventListener('click', () => {
+    accountActivated.close()
     window.location.replace('../../pages/auth/login.html')
 });
