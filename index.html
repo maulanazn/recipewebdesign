@@ -10,75 +10,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" media="all" aria-disabled="true">
 </head>
 <body>
-    <nav class="container row pt-3 nav-expand-md">
-        <a class="col-2 btn" href="pages/auth/register.html">Register</a>
-        <a class="col-2 btn" href="pages/auth/login.html">Login</a>
-        <a class="col-2 btn" href="pages/recipe/menurecipe.html">Search menu</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+							<li class="nav-item">
+                <a class="nav-link" href="pages/auth/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+								<a class="nav-link" href="pages/auth/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+								<a class="nav-link" href="pages/recipe/menurecipe.html">Search menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <section class="m-4 p-5 mt-lg-5 mt-sm-5 mt-md-5">
-        <h1>
+    <div class="m-lg-5 p-lg-5">
+        <h1 class="mt-lg-5 mt-sm-1">
             Discover Recipe <br>
             & Delicious Food
         </h1>
-        <nav class="navbar navbar-expand-lg navbar-expand-xl bg-body-tertiary search-bar">
-            <form class="container-fluid">
-              <div class="input-group w-auto">
-                <i class="bi bi-search input-group-text"></i>
-                <input type="text" class="form-control" placeholder="Search Delicious Food" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-            </form>
-        </nav>
-    </section>
+            <div class="input-group mb-3 w-50 mb-sm-3 mb-md-3 mb-lg-3">
+            <i class="bi bi-search input-group-text"></i>
+            <input type="text" class="form-control" placeholder="Search Delicious Food" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+    </div>
     
-    <section>
-        <div class="yellow-background position-relative top-0 start-50 translate-middle-y">
-            <img src="assets/images/nasi goreng.avif" class="" width="500" height="350" loading="eager" decoding="async" id="img-1" alt="nasi goreng">
-        </div>
-    </section>
+    <div class="d-flex justify-content-end first-image">
+        <img src="assets/images/nasi goreng.avif" class="img-fluid img-thumbnail rounded float-end" width="500" height="350" loading="eager" decoding="async" id="img-1" alt="nasi goreng">
+    </div>
 
-    <nav class="col-4 offset-md-1 row info-box" style="margin-top: -1vh;">
+    <section class="m-5 p-5">
         <div class="vr bg-warning" style="padding: 6px;"></div>
         <mark class="col bg-transparent profile-wrapper">
             <h1>Popular For You !</h1>
         </mark>
-    </nav>
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4 yellow-background-1" href="../recipe/detailmenu.html">
+    </section>
+    <section class="d-flex single-popular-recipe justify-content-start">
+        <a class="col-md-4" href="../recipe/detailmenu.html">
             <img src="../../assets/images/nasi goreng.avif" width="500" height="350" loading="eager" decoding="async" width="500" alt="Egg fried rice">
         </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h1>Egg Fried Rice</h1>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br>
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
-        </section>
+    </section>
+    <section class="d-flex ingredient-popular-recipe justify-content-end flex-column offset-md-8">
+        <h1>Egg Fried Rice</h1>
+        <p class="ingredient">
+            Ingredients: <br>
+            chicken, garlic, salt, <br>
+            soy sauce, spicy sauce, <br>
+            pepper.
+        </p>
+        <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
     </section>
 
-    <nav class="col-4 offset-md-1 row info-box" style="margin-top: -5vh;">
+    <section class="col-4 offset-md-1 row" style="margin-top: -5vh;">
         <div class="vr bg-warning" style="padding: 6px;"></div>
         <mark class="col bg-transparent profile-wrapper">
             <h1>New Recipe</h1>
         </mark>
-    </nav>
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4 yellow-background-2" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi kuning.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-        </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h1>Nasi Kuning</h1>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br> 
-                ginger, galangal, turmeric, <br>
-                chili.
-            </p>
-            <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
-        </section>
+    </section>
+    <section class="d-flex single-new-recipe justify-content-start">
+    <a class="col-md-4" href="../recipe/detailmenu.html">
+        <img src="../../assets/images/nasi kuning.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
+    </a>
+    </section>
+    <section class="d-flex ingredient-new-recipe justify-content-end flex-column offset-md-8">
+        <h1>Nasi Kuning</h1>
+        <p class="ingredient">
+            Ingredients: <br>
+            chicken, garlic, salt, <br> 
+            ginger, galangal, turmeric, <br>
+            chili.
+        </p>
+        <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
     </section>
 
     <nav class="col-4 offset-md-1 row info-box" style="margin-top: -5vh; margin-bottom: 6vh;">
@@ -130,5 +139,6 @@
         </nav>
         <h5 class="footer-company">Arkademy</h5>
     </footer>
+	<script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>

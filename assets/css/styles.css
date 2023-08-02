@@ -1,184 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
-
 :root {
     --yellow: #EFC81A;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Poppins' !important;
-    background-color: #FFFFFF;
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: var(--yellow);
+    color: black;
 }
 
-@media (min-width: 577px) {
-    .m-4 h1 {
-        margin-top: 15vh;
+footer, .footer-nav {
+    background-color: var(--yellow);
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: var(--yellow);
+    color: black;
+    margin-left: 3vh;
+    margin-top: 5vh;
+}
+
+.recipes-popular .img-recipe-1 {
+    width: 100vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 314.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-2 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 315.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-3 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 316.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-4 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 317.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-5 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 318.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipes-popular .img-recipe-6 {
+    width: 50vh;
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 319.avif');
+    border-radius: 20px;
+    background-clip: content-box;
+    background-repeat: space;
+    background-size: cover;
+}
+
+.recipe-popular-group {
+    margin-bottom: 6vh;
+}
+
+.recipes-popular .img-recipe-1 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-2 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-3 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-4 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-5 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+.recipes-popular .img-recipe-6 p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 35vh;
+    background-color: transparent;
+    font-size: 4vh;
+    margin-left: 2vh;
+}
+
+@media (min-width: 992px) {
+    .first-image {
+        margin-top: -50vh;
+        margin-right: 10vh;
     }
 
-    .yellow-background {
-        width: 360px;
-        margin-top: -30vh;
-        margin-left: 12vh;
-        z-index: 1000;
-        filter: drop-shadow(30px 40px 4px var(--yellow))
+    .single-popular-recipe a img {
+        margin-top: -10vh;
+        margin-left: 15vh;
     }
 
-    .card-recipe .yellow-background-1 img {
-        margin-top: 3vh;
-        margin-left: -1vh;
-        border-radius: 10px;
-        filter: drop-shadow(30px 30px 4px #EFC81A)
+    .ingredient-popular-recipe {
+        margin-top: -50vh;
+        margin-bottom: 40vh;
     }
 
-    .card-recipe .yellow-background-2 img {
-        margin-top: 3vh;
-        margin-left: -1vh;
-        border-radius: 10px;
-        filter: drop-shadow(30px 40px 4px #EFC81A)
+    .single-new-recipe a img {
+        margin-left: 15vh;
+        margin-top: 10vh;
     }
 
-    .popular-food-1 .popular-text {
-        margin-left: 10%;
-    }
-
-    .card-recipe, .recipe-info {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-start: 2;
-        margin: 10vh 6vh 10vh 18vh;
-        overflow: hidden;
-    }
-
-    .card-recipe a img {
-        border-radius: 10px;
-    }
-
-    .card-recipe .recipe-info {
-        font-size: 3vh;
-    }
-
-    .recipes-popular .img-recipe-1 {
-        width: 100vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 314.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-2 {
-        width: 50vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 315.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-3 {
-        width: 50vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 316.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-4 {
-        width: 50vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 317.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-5 {
-        width: 50vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 318.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-6 {
-        width: 50vh;
-        height: 50vh;
-        background-image: url('../images/Rectangle\ 319.avif');
-        border-radius: 20px;
-        background-clip: content-box;
-        background-repeat: space;
-        background-size: cover;
-    }
-
-    .recipes-popular .img-recipe-1 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipes-popular .img-recipe-2 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipes-popular .img-recipe-3 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipes-popular .img-recipe-4 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipes-popular .img-recipe-5 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipes-popular .img-recipe-6 p {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        margin-top: 35vh;
-        background-color: transparent;
-        font-size: 4vh;
-        margin-left: 2vh;
-    }
-
-    .recipe-popular-gap {
-        margin-top: 4vh;
+    .ingredient-new-recipe {
+        margin-top: -50vh;
+        margin-bottom: 40vh;
     }
 
     footer, .footer-motto, .footer-sub-motto {
@@ -201,62 +193,6 @@
         margin-left: 150vh;
         margin-top: -5vh;
     }
-}
-@media (max-width: 576px) {
-    .nav-top {
-        display: grid;
-        place-content: end;
-        gap: 10vh;
-        margin-left: 10vh;
-    }
-
-    .search-box h1 {
-        text-align: center;
-        margin-top: 6vh;
-        font-size: 4vh;
-        letter-spacing: 0.5vh;
-        font-weight: 600;
-        color: #2E266F;
-    }
-
-    .yellow-background {
-       display: none;
-    }
-
-    .yellow-background #img-1 {
-        display: none;
-    }
-    
-    .card-recipe .yellow-background-1 img {
-        margin-top: 3vh;
-        margin-bottom: 2vh;
-        margin-left: 1vh;
-        border-radius: 10px;
-    }
-    
-    .card-recipe .yellow-background-2 img {
-        margin-top: 3vh;
-        margin-left: 1vh;
-        border-radius: 10px;
-    }
-
-    .card-recipe, .recipe-info {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(35vh, 1fr));
-        margin: 1vh 1vh 10vh 1vh;
-    }
-    
-    .card-recipe a img {
-        border-radius: 10px;
-        width: 30vh;
-        height: 20vh;
-    }
-
-    .recipe-popular-group {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(45vh, 1fr));
-        margin: 1vh 10vh 10vh 1vh;
-    }
 
     .recipes-popular .img-recipe-1 {
         width: 100vh;
@@ -318,13 +254,17 @@
         background-size: cover;
     }
 
+    .recipe-popular-group {
+        margin-bottom: 4vh;
+    }
+
     .recipes-popular .img-recipe-1 p {
         display: flex;
         justify-content: start;
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
     }
 
@@ -334,7 +274,7 @@
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
     }
 
@@ -344,7 +284,7 @@
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
     }
 
@@ -354,7 +294,7 @@
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
     }
 
@@ -364,7 +304,7 @@
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
     }
 
@@ -374,25 +314,7 @@
         align-items: start;
         margin-top: 35vh;
         background-color: transparent;
-        font-size: 2vh;
+        font-size: 4vh;
         margin-left: 2vh;
-    }
-
-    footer, .footer-motto, .footer-sub-motto {
-        text-align: center;
-        margin-top: 2vh;
-        padding: 20px;
-        background-color: var(--yellow);
-        color: black;
-    }
-
-    footer, .footer-nav {
-        background-color: var(--yellow);
-        color: black;
-        margin-top: 20vh;
-    }
-
-    footer .footer-company {
-        display: none;
     }
 }
