@@ -10,185 +10,113 @@
     font-family: 'Poppins';
 }
 
-@media (max-width: 576px) {
-    .profile-wrapper #photo-profile {
-        margin-top: 3vh;
-        margin-left: 3vh;
-    }
-
-    .profile-wrapper, .info-user {
-        display: none;
-    }
-
-    .date {
-        visibility: hidden;
-    }
-    
-    .user-creation-interest {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: row;
-        gap: 3vh;
-        margin-top: 15vh;
-        margin-left: 5vh;
-    }
-    
-    .recipe-content-disappeared {
-        display: none;
-    }
-    
-    .recipe-bookmark-disappeared {
-        display: none;
-    }
-    
-    .recipe-like-disappeared {
-        display: none;
-    }
-    
-    .user-creation-interest a {
-        color: black;
-        text-decoration: none;
-        font-size: 2vh;
-    }
-
-    hr {
-        display: none;
-    }
-    
-    .card-recipe {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-start: 2;
-        margin: 10vh 0 10vh 5vh;
-        overflow: hidden;
-    }
-
-    .card-recipe a img {
-        width: 40vh;
-    }
-    
-    .card-recipe .recipe-info {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-start: 2;
-        margin: 35vh 0 10vh -40vh;
-        overflow: hidden;
-    }
-    
-    .card-recipe .recipe-info .reaction-row {
-        background-color: var(--yellow);
-        padding: 1vh 1vh 2vh 1vh;
-        width: 32vh;
-        height: 2vh;
-    }
-    
-    .card-recipe .recipe-info .action {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: row;
-        gap: 130px;
-    }
-    
-    .pagination, .button-previous {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    footer, .footer-motto, .footer-sub-motto {
-        text-align: center;
-        margin-top: 2vh;
-        padding: 20px;
-        background-color: var(--yellow);
-        color: black;
-    }
-    
-    footer, .footer-nav {
-        background-color: var(--yellow);
-        color: black;
-        margin-top: 20vh;
-    }
-    
-    footer .footer-company {
-        display: none;
-    }
+.profile-wrapper a img {
+    margin-left: 17vh;
+    margin-right: 2vh;
 }
 
-@media (min-width: 577px) {
-    .profile-wrapper #photo-profile {
-        margin-top: 3vh;
-        margin-left: 3vh;
+.second-nav div form .reaction-count {
+    display: none;  
+}
+
+hr {
+    display: none;
+}
+
+.ingredient-popular-recipe {
+    text-align: center;
+    gap: 2vh;
+}
+
+.ingredient-popular-recipe .account {
+    background-color: transparent;
+}
+
+.ingredient-popular-recipe .reaction-row {
+    width: 65%;
+    margin: auto;
+}
+
+.pagination, .button-next {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: -10vh;
+    align-items: center;
+    gap: 12px;
+}
+
+footer, .footer-motto, .footer-sub-motto {
+    text-align: center;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: var(--yellow);
+    color: black;
+}
+
+footer, .footer-nav {
+    background-color: var(--yellow);
+    color: black;
+    margin-top: 20vh;
+}
+
+footer .footer-company {
+    background-color: var(--yellow);
+    color: black;
+    margin-left: 1vh;
+    margin-top: 5vh;
+}
+
+@media (min-width: 992px) {
+    .second-nav {
+        margin-top: 6vh;
+    }
+
+    .second-nav div form .reaction-count {
+        display: flex;  
+    }
+
+    .profile-wrapper {
+        margin-left: -14vh;
+    }
+
+    .vr {
+        margin-left: 40vh;
+    }
+
+    .profile-details {
+        margin-left: 2vh;
+    }
+
+    .single-popular-recipe a img {
+        margin-top: -1vh;
+        margin-left: 16vh;
+    }
+
+    .ingredient-popular-recipe {
+        text-align: start;
+        margin-top: -50vh;
+        margin-bottom: 10vh;
+        gap: 2vh;
     }
     
-    .user-creation-interest {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: row;
-        gap: 39vh;
-        margin-top: 15vh;
-        margin-left: 35vh;
+    .ingredient-popular-recipe .account {
+        background-color: transparent;
     }
     
-    .recipe-content-disappeared {
-        display: none;
+    .ingredient-popular-recipe .reaction-row {
+        width: 65%;
+        margin: auto;
+        margin-left: -0.2vh;
     }
-    
-    .recipe-bookmark-disappeared {
-        display: none;
-    }
-    
-    .recipe-like-disappeared {
-        display: none;
-    }
-    
-    .user-creation-interest a {
-        color: black;
-        text-decoration: none;
-        font-size: 5vh;
-    }
-    
-    .card-recipe {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-start: 2;
-        margin: 10vh 0 10vh 35vh;
-        overflow: hidden;
-    }
-    
-    .card-recipe .recipe-info {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-start: 2;
-        margin: 10vh 0 10vh -20vh;
-        overflow: hidden;
-    }
-    
-    .card-recipe .recipe-info .reaction-row {
-        background-color: var(--yellow);
-        padding: 2vh 1vh 5vh 5vh;
-        width: 55vh;
-        height: 2vh;
-    }
-    
-    .card-recipe .recipe-info .action {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: row;
-        gap: 130px;
-    }
-    
-    .pagination, .button-previous {
+
+    .pagination, .button-next {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
     }
-    
+
     footer, .footer-motto, .footer-sub-motto {
         text-align: center;
         margin-top: 2vh;
@@ -196,17 +124,21 @@
         background-color: var(--yellow);
         color: black;
     }
-    
+
     footer, .footer-nav {
         background-color: var(--yellow);
         color: black;
         margin-top: 20vh;
     }
-    
+
     footer .footer-company {
         background-color: var(--yellow);
         color: black;
         margin-left: 150vh;
         margin-top: -5vh;
     }
+}
+
+@media (min-width: 768px) {
+    
 }
