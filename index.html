@@ -11,50 +11,50 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-							<li class="nav-item">
+            <ul class="navbar-nav ms-5 mt-4 gap-5">
+            <li class="nav-item">
                 <a class="nav-link" href="pages/auth/register.html">Register</a>
               </li>
               <li class="nav-item">
-								<a class="nav-link" href="pages/auth/login.html">Login</a>
+                <a class="nav-link" href="pages/auth/login.html">Login</a>
               </li>
               <li class="nav-item">
-								<a class="nav-link" href="pages/recipe/menurecipe.html">Search menu</a>
+                <a class="nav-link" href="pages/recipe/menurecipe.html">Search menu</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <div class="m-lg-5 p-lg-5">
-        <h1 class="mt-lg-5 mt-sm-1">
+    <div class="m-lg-5 p-lg-5 m-sm-5 p-sm-5 second-navigation">
+        <h1 class="mt-lg-5 mt-sm-5">
             Discover Recipe <br>
             & Delicious Food
         </h1>
-            <div class="input-group mb-3 w-50 mb-sm-3 mb-md-3 mb-lg-3">
+        <div class="input-group mb-3 w-50 mb-sm-3 mb-md-3 mb-lg-3">
             <i class="bi bi-search input-group-text"></i>
             <input type="text" class="form-control" placeholder="Search Delicious Food" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
+        </div>
     </div>
     
     <div class="d-flex justify-content-end first-image">
-        <img src="assets/images/nasi goreng.avif" class="img-fluid img-thumbnail rounded float-end" width="500" height="350" loading="eager" decoding="async" id="img-1" alt="nasi goreng">
+        <img src="assets/images/image-13.webp" class="img-fluid img-thumbnail rounded float-end" width="500" height="350" loading="eager" decoding="async" id="img-1" alt="nasi goreng">
     </div>
 
-    <section class="m-5 p-5">
+    <section class="m-5 p-5 info-box">
         <div class="vr bg-warning" style="padding: 6px;"></div>
         <mark class="col bg-transparent profile-wrapper">
             <h1>Popular For You !</h1>
         </mark>
     </section>
     <section class="d-flex single-popular-recipe justify-content-start">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" width="500" height="350" loading="eager" decoding="async" width="500" alt="Egg fried rice">
+        <a class="col-md-5" href="../recipe/detailmenu.html">
+            <img src="./assets/images/image-4.webp" class="img-fluid img-thumbnail rounded float-end" width="500" height="350" loading="eager" decoding="async" width="500" alt="Egg fried rice">
         </a>
     </section>
     <section class="d-flex ingredient-popular-recipe justify-content-end flex-column offset-md-8">
@@ -68,18 +68,18 @@
         <a href="#" role="link" style="width: 25vh;" class="btn btn-warning btn-lg">Learn More</a>
     </section>
 
-    <section class="col-4 offset-md-1 row" style="margin-top: -5vh;">
+    <section class="col-4 offset-md-1 row info-box" style="margin-top: -5vh;">
         <div class="vr bg-warning" style="padding: 6px;"></div>
         <mark class="col bg-transparent profile-wrapper">
             <h1>New Recipe</h1>
         </mark>
     </section>
     <section class="d-flex single-new-recipe justify-content-start">
-    <a class="col-md-4" href="../recipe/detailmenu.html">
-        <img src="../../assets/images/nasi kuning.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-    </a>
+			<a class="col-md-5" href="../recipe/detailmenu.html">
+                <img src="assets/images/image-5.webp" class="img-fluid img-thumbnail rounded float-end" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
+			</a>
     </section>
-    <section class="d-flex ingredient-new-recipe justify-content-end flex-column offset-md-8">
+    <section class="d-flex ingredient-popular-recipe justify-content-end flex-column offset-md-8">
         <h1>Nasi Kuning</h1>
         <p class="ingredient">
             Ingredients: <br>
@@ -98,33 +98,39 @@
     </nav>
 
     <section class="container recipe-popular-group">
-        <section class="recipes-popular row">
-            <div class="img-recipe-1 col">
-                <p>Chicken <br> Kare</p>
+        <section class="row recipe-popular-section">
+            <div class="col recipe-popular-text">
+                <p class="position-absolute recipe-text">Chicken <br> Kare</p>
+                <img src="assets/images/image-7.webp" class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
             </div>
-    
-            <div class="img-recipe-2 col">
-                <p>Bomb <br> Chicken</p>
+
+            <div class="col recipe-popular-text">
+                <p class="position-absolute recipe-text">Bomb <br> Chicken</p>
+                <img src="assets/images/image-8.webp"  class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
             </div>
-    
-            <div class="img-recipe-3 col">
-                <p>Banana <br> Smoothie Pop</p>
+
+            <div class="col recipe-popular-text">
+                <p class="position-absolute recipe-text">Banana Smoothie Pop</p>
+                <img src="assets/images/image-9.webp"  class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
             </div>
         </section>
     </section>
-    <section class="container recipe-popular-gap recipe-popular-group">
-        <section class="recipes-popular row">
-            <div class="img-recipe-4 col">
-                <p>Coffee Lava <br> Cake</p>
-            </div>
-    
-            <div class="img-recipe-5 col">
-                <p>Sugar <br> Salmon</p>
-            </div>
-    
-            <div class="img-recipe-6 col">
-                <p>Indiana <br> Salad</p>
-            </div>
+    <section class="container recipe-popular-group">
+        <section class="row recipe-popular-section">
+						<div class="col recipe-popular-text">
+							<p class="position-absolute recipe-text">Coffee Lava <br> Cake</p>
+							<img src="assets/images/image-10.webp"  class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
+						</div>
+          
+						<div class="col recipe-popular-text">
+							<p class="position-absolute recipe-text">Sugar <br> Salmon</p>
+							<img src="assets/images/image-11.webp"  class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
+						</div>
+  
+						<div class="col recipe-popular-text">
+							<p class="position-absolute recipe-text">Indiana <br> Salad</p>
+							<img src="assets/images/image-12.webp"  class="w-100 h-75" loading="eager" decoding="asyc" width="500" height="350" alt="Chicken Kare">
+						</div>
         </section>
     </section>
 

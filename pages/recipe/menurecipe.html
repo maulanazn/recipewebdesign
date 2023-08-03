@@ -6,157 +6,75 @@
     <title>Search Recipe</title>
     <link rel="stylesheet" href="../../assets/css/menurecipe.css"  media="screen">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css"  media="screen">
-    <style>
-        #photo-profile {
-            height: 50px;
-            width: 50px;
-            border-radius: 25px;
-            background-color: transparent;
-        }
-
-        .card-recipe .recipe-info .account {
-            background-color: transparent;
-        }
-
-        .card-recipe .recipe-info {
-            margin: 0 45vh 0 0;
-        }
-    </style>
 </head>
 <body>
-    <nav class="container-fluid row pt-3 nav-top">
-        <a class="col-2 btn" href="../../index.html">Home</a>
-        <a class="col-2 btn" href="../recipe/addmenu.html">Add Recipe</a>
-        <a class="col-2 btn" href="#">Search Menu</a>
-        <div class="mini-profile col-2 offset-md-4 row">
-        <div class="vr bg-warning profile" style="padding: 2px;"></div>
-            <mark class="col bg-transparent profile-wrapper">
-                <a href="../profile/detailprofile.html">
-                    <img loading="eager" width="50" height="50" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" alt="Elephant profile">
-                </a>
-            </mark>
-            <mark class="col bg-transparent logout-detail">
-                <p class="col">Mr. Elephant</p>
-                <a class="fw-bold" role="button" id="logout-btn">Logout</a>
-            </mark>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container-fluid ms-5 gap-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../auth/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../auth/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../recipe/menurecipe.html">Search Menu</a>
+              </li>
+            </ul>
+            <div class="vr bg-warning profile offset-md-6"></div>
+                <mark class="col bg-transparent profile-wrapper">
+                    <a href="../profile/detailprofile.html">
+                        <img loading="eager" width="50" height="50" class="ms-5" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
+                    </a>
+                </mark>
+                <mark class="col bg-transparent logout-detail">
+                    <p class="col">Mr. Elephant</p>
+                    <a class="fw-bold" role="button" id="logout-btn">Logout</a>
+                </mark>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <header class="title-top container">
         <h1 class="">Discover Recipe</h1>
         <h1>& Delicious Food</h1>
     </header>
 
-    <section class="m-5 search-bar bg-transparent">
-        <input class="m-4" type="search" name="menu" value="Telur Gulung" id="menu">
+    <div class="input-group search-bar mb-3 w-50 mb-sm-3 mb-md-3 mb-lg-3">
+        <input type="text" name="menu" class="form-control" placeholder="Search Delicious Food" aria-label="Username" aria-describedby="basic-addon1">
         <a href="#" class="btn btn-warning" role="search">Search</a>
-    </section>
+    </div>
     
-    <section class="container category">
+    <section class="container category gap-2">
         <a role="link" class="btn btn-warning" href="">New</a>
         <a role="link" class="btn btn-warning" href="">Popular</a>
         <a role="link" class="btn btn-success" href="">Vegetarian</a>
         <a role="link" class="btn btn-success" href="">Breakfast</a>
     </section>
-    
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-        </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h3>Egg Fried Rice</h3>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br> 
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <p class="reaction-row">10 likes - 12 comments - 3 bookmarks</p>
-            <mark class="account">
-                <img class="rounded-circle" src="../../assets/images/elephant.avif" loading="eager" decoding="async" width="30" height="30" alt="Mr. Elephant">
-                Elephant
-            </mark>
-        </section>
-    </section>
 
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
+    <section class="d-flex single-popular-recipe justify-content-start container">
+        <a class="col-md-8 mt-5" href="../recipe/detailmenu.html">
+            <img src="../../assets/images/image-4.webp" class="img-fluid img-thumbnail rounded float-start" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
         </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h3>Egg Fried Rice</h3>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br> 
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <p class="reaction-row">10 likes - 12 comments - 3 bookmarks</p>
-            <mark class="account">
-                <img class="rounded-circle" src="../../assets/images/elephant.avif" loading="eager" decoding="async" width="30" height="30" alt="Mr. Elephant">
-                Elephant
-            </mark>
-        </section>
     </section>
-
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-        </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h3>Egg Fried Rice</h3>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br> 
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <p class="reaction-row">10 likes - 12 comments - 3 bookmarks</p>
-            <mark class="account">
-                <img class="rounded-circle" loading="eager" decoding="async" src="../../assets/images/elephant.avif" width="30" height="30" alt="Mr. Elephant">
-                Elephant
-            </mark>
-        </section>
-    </section>
-
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-        </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h3>Egg Fried Rice</h3>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br> 
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <p class="reaction-row">10 likes - 12 comments - 3 bookmarks</p>
-            <mark class="account">
-                <img class="rounded-circle" loading="eager" decoding="async" src="../../assets/images/elephant.avif" width="30" height="30" alt="Mr. Elephant">
-                Elephant
-            </mark>
-        </section>
-    </section>
-
-    <section class="bg-transparent card-recipe">
-        <a class="col-md-4" href="../recipe/detailmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" alt="Egg fried rice">
-        </a>
-        <section class="col-md-8 bg-transparent recipe-info">
-            <h3>Egg Fried Rice</h3>
-            <p class="ingredient">
-                Ingredients: <br>
-                chicken, garlic, salt, <br>  
-                soy sauce, spicy sauce, <br>
-                pepper.
-            </p>
-            <p class="reaction-row">10 likes - 12 comments - 3 bookmarks</p>
-            <mark class="account">
-                <img class="rounded-circle" loading="eager" decoding="async" src="../../assets/images/elephant.avif" width="30" height="30" alt="Mr. Elephant">
-                Elephant
-            </mark>
-        </section>
+    <section class="d-flex ingredient-popular-recipe justify-content-end flex-column offset-md-8">
+        <h3>Egg Fried Rice</h3>
+        <p class="ingredient">
+            Ingredients: <br>
+            chicken, garlic, salt, <br> 
+            soy sauce, spicy sauce, <br>
+            pepper.
+        </p>
+        <p class="reaction-row bg-warning">10 likes - 12 comments - 3 bookmarks</p>
+        <mark class="account">
+            <img class="rounded-circle" src="../../assets/images/image-3.webp" loading="eager" decoding="async" width="30" height="30" alt="Mr. Elephant">
+            Elephant
+        </mark>
     </section>
 
     <section class="pagination">
@@ -187,5 +105,6 @@
     </dialog>
 
     <script src="../../assets/js/logout.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
 </body>
 </html>

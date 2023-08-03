@@ -8,46 +8,64 @@
     <link rel="stylesheet"  media="screen" href="../../assets/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="container-fluid row pt-3 nav-top">
-        <a class="col-2 btn" href="../../index.html">Home</a>
-        <a class="col-2 btn" href="../recipe/addmenu.html">Add Recipe</a>
-        <a class="col-2 btn" href="../recipe/menurecipe.html">Search Menu</a>
-        <div class="mini-profile col-2 offset-md-4 row">
-            <div class="vr bg-warning" style="padding: 2px;"></div>
-            <mark class="col bg-transparent profile-wrapper">
-                <a href="../profile/detailprofile.html">
-                    <img width="50"  height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" alt="Elephant profile">
-                </a>
-            </mark>
-            <mark class="col bg-transparent logout-detail">
-                <p class="col">Mr. Elephant</p>
-                <a class="fw-bold" role="button" id="logout-btn">Logout</a>
-            </mark>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container-fluid ms-5 gap-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../recipe/addmenu.html">Add Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../recipe/menurecipe.html">Search Menu</a>
+              </li>
+            </ul>
+            <div class="vr bg-warning profile offset-md-6"></div>
+                <mark class="col bg-transparent">
+                    <a href="../profile/detailprofile.html">
+                        <img loading="eager" width="50" height="50" class="ms-5" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
+                    </a>
+                </mark>
+                <mark class="col bg-transparent logout-detail">
+                    <p class="col">Mr. Elephant</p>
+                    <a class="fw-bold" role="button" id="logout-btn">Logout</a>
+                </mark>
+            </div>
+          </div>
         </div>
     </nav>
 
-    <nav class="col-2 offset-md-2 row profile" style="margin-top: 5vh;">
-        <div class="vr bg-warning" style="padding: 2px;"></div>
-        <mark class="col bg-transparent profile-wrapper">
-            <a href="../profile/editprofile.html">
-                <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" alt="Elephant profile">
-            </a>
-        </mark>
-        <mark class="col bg-transparent">
-            <p class="col">Mr. Elephant</p>
-            <p class="fw-bold">10 recipes</p>
-        </mark>
+    <nav class="navbar bg-body-tertiary second-nav">
+        <div class="container-fluid">
+            <div class="vr bg-warning" style="padding: 2px;"></div>
+            <mark class="bg-transparent profile-wrapper">
+                <a href="../profile/editprofile.html">
+                    <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
+                </a>
+            </mark>
+            <mark class="col bg-transparent profile-details">
+                <p class="col">Mr. Elephant</p>
+                <p class="fw-bold">10 recipes</p>
+            </mark>
+          <form class="d-flex" role="search">
+            <mark class="col-2 row bg-transparent reaction-count" style="text-align: end;  margin-left: 150vh; margin-top: -14vh;">
+                <p>21 February 2020</p>
+                <p>20 likes - 3 comments</p>
+            </mark>
+          </form>
+        </div>
     </nav>
 
-    <mark class="col-2 row bg-transparent reaction-count" style="text-align: end;  margin-left: 150vh; margin-top: -14vh;">
-        <p>21 February 2020</p>
-        <p>20 likes - 3 comments</p>
-    </mark>
 
-    <section class="recipe-detail-content d-grid">
-        <h1 class="detail-title">Nasi Goreng</h1>
-        <a href="../recipe/editmenu.html">
-            <img src="../../assets/images/nasi goreng.avif" loading="eager" decoding="async" width="500" height="350" id="recipe-img" alt="Nasi goreng">
+    <section class="container">
+        <h1 class="text-center">Egg Fried Rice</h1>
+        <a href="../recipe/editmenu.html" class="image-detail-link">
+            <img src="../../assets/images/image-4.webp" class="img-fluid img-thumbnail" loading="eager" decoding="async" width="500" height="350" id="recipe-img" alt="Nasi goreng">
         </a>
         <p class="ingredient">
             Ingredients: <br>
@@ -62,61 +80,60 @@
     </section>
 
     <section class="reaction">
-        <i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
-                <path d="M22.1104 26.9995L11.9993 19.7773L1.88818 26.9995V3.8884C1.88818 3.12222 2.19255 2.38742 2.73432 1.84565C3.27609 1.30388 4.01089 0.999512 4.77707 0.999512H19.2215C19.9877 0.999512 20.7225 1.30388 21.2643 1.84565C21.806 2.38742 22.1104 3.12222 22.1104 3.8884V26.9995Z" stroke="#EFC81A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <button class="btn bookmarkBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
             </svg>
-        </i>
-        <i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M9.63705 34.9998H4.45482C3.53854 34.9998 2.6598 34.6416 2.01189 34.004C1.36399 33.3663 1 32.5015 1 31.5998V19.6999C1 18.7981 1.36399 17.9334 2.01189 17.2957C2.6598 16.6581 3.53854 16.2999 4.45482 16.2999H9.63705M21.7289 12.8999V6.09997C21.7289 4.74737 21.1829 3.45018 20.2111 2.49375C19.2392 1.53732 17.9211 1 16.5467 1L9.63705 16.2999V34.9998H29.1222C29.9554 35.0091 30.7639 34.7217 31.3988 34.1906C32.0337 33.6595 32.4521 32.9205 32.5771 32.1098L34.9609 16.8099C35.036 16.3226 35.0026 15.8251 34.863 15.3517C34.7234 14.8784 34.4808 14.4406 34.1522 14.0687C33.8236 13.6968 33.4167 13.3996 32.9598 13.1978C32.5029 12.996 32.0068 12.8943 31.5061 12.8999H21.7289Z" stroke="#EFC81A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </button>
+        <button class="btn likeBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"></path>
             </svg>
-        </i>
-        <i class="glyphicon glyphicon-thumbs-up"></i>
+        </button>
     </section>
     
     <hr class="horizontal-line">
 
     <section class="col-2 offset-md-2 row comment-section" style="margin-top: 5vh;">
-        <mark class="col bg-transparent profile-wrapper">
-            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" width="500" height="350" alt="Elephant profile">
+        <mark class="col bg-transparent profile-comment">
+            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
         </mark>
         <mark class="col bg-transparent">
             <p class="col">Mr. Elephant</p>
             <p class="fw-bold">10 recipes</p>
         </mark>
-        <div class="vr bg-warning" style="padding: 2px;"></div>
+        <div class="vr bg-warning" style="padding: 4px; height: 100px; margin-top: -17vh;"></div>
     </section>
     <p class="comment">It is good recipe</p>
 
     <section class="col-2 offset-md-2 row comment-section" style="margin-top: 5vh;">
-        <mark class="col bg-transparent profile-wrapper">
-            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" alt="Elephant profile">
+        <mark class="col bg-transparent profile-comment">
+            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
         </mark>
         <mark class="col bg-transparent">
             <p class="col">Mr. Elephant</p>
             <p class="fw-bold">10 recipes</p>
         </mark>
-        <div class="vr bg-warning" style="padding: 2px;"></div>
+        <div class="vr bg-warning" style="padding: 4px; height: 100px; margin-top: -17vh;"></div>
     </section>
     <p class="comment">It is good recipe</p>
-    
+
     <section class="col-2 offset-md-2 row comment-section" style="margin-top: 5vh;">
-        <mark class="col bg-transparent profile-wrapper">
-            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/elephant.avif" alt="Elephant profile">
+        <mark class="col bg-transparent profile-comment">
+            <img width="50" height="50" loading="eager" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
         </mark>
         <mark class="col bg-transparent">
             <p class="col">Mr. Elephant</p>
             <p class="fw-bold">10 recipes</p>
         </mark>
-        <div class="vr bg-warning" style="padding: 2px;"></div>
+        <div class="vr bg-warning" style="padding: 4px; height: 100px; margin-top: -17vh;"></div>
     </section>
     <p class="comment">It is good recipe</p>
-    
+
     <hr class="horizontal-line">
 
-    <form action="#" method="post">
-        <input type="text" name="comment" id="comment" placeholder="Your comment here!">
+    <form action="#" method="post" class="comment-form">
+        <textarea name="" id="" cols="60" rows="10" placeholder="Type a comment"></textarea>
         <br>
         <button class="" type="submit">Send a comment</button>
     </form>
