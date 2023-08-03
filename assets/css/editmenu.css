@@ -6,7 +6,7 @@
     font-family: 'Poppins';
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .profile-wrapper #photo-profile {
         margin-top: 3vh;
         margin-left: 3vh;
@@ -19,10 +19,10 @@
     }
     
     form .photo-file {
-        width: 40vh;
-        height: 20vh;
+        width: 100vh;
+        height: 50vh;
         margin-right: 80vh;
-        background-image: url('../images/nasi\ goreng.avif');
+        background-image: url('../images/image-4.webp');
         border-radius: 10px;
         background-clip: content-box;
         background-repeat: space;
@@ -37,10 +37,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 9vh;
-        margin-left: 14vh;
-        width: 15vh;
-        height: 4vh;
+        margin-top: 19vh;
+        margin-left: 38vh;
+        width: 25vh;
+        height: 5vh;
         background-color: #4f8cf5;
         color: white;
         border-radius: 6px;
@@ -49,7 +49,7 @@
     form #title {
         width: auto;
         height: 50px;
-        margin-right: 100vh;
+        margin-right: 129vh;
         margin-top: 3vh;
         margin-bottom: 3vh;
         border: 1px solid #8692A6;
@@ -57,9 +57,9 @@
         padding: 2vh;
     }
     
-    form #ingredient {
-        width: 30vh;
-        height: 20vh;
+    form textarea {
+        width: 80vh;
+        height: 50vh;
         margin-right: 100vh;
         margin-top: 3vh;
         margin-bottom: 3vh;
@@ -70,7 +70,7 @@
     form #category {
         width: 140px;
         height: 50px;
-        margin-right: 118vh;
+        margin-right: 158vh;
         margin-top: 3vh;
         margin-bottom: 3vh;
         border: 1px solid #8692A6;
@@ -88,7 +88,7 @@
         background-color: #EFC81A;
         border: 1px solid #EFC81A;
         border-radius: 5px;
-        margin-right: 90vh;
+        margin-left: 20vh;
         margin-top: 100px;
         width: 400px;
         height: 50px;
@@ -111,8 +111,8 @@
     footer .footer-company {
         background-color: #EFC81A;
         color: black;
-        margin-left: 150vh;
-        margin-top: -5vh;
+        margin-left: 1vh;
+        margin-top: 5vh;
     }
 }
 
@@ -129,10 +129,10 @@
     }
     
     form .photo-file {
-        width: 100vh;
+        width: 90vh;
         height: 50vh;
-        margin-right: 49vh;
-        background-image: url('../images/nasi\ goreng.avif');
+        margin-right: 90vh;
+        background-image: url('../images/image-4.webp');
         border-radius: 10px;
         background-clip: content-box;
         background-repeat: space;
@@ -147,26 +147,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20vh;
-        margin-left: 26vh;
-        width: 50vh;
-        height: 7vh;
+        margin-top: 19vh;
+        margin-left: 38vh;
+        width: 25vh;
+        height: 5vh;
         background-color: #4f8cf5;
         color: white;
         border-radius: 6px;
     }
     
     form #title {
-        width: 150vh;
+        width: auto;
         height: 50px;
+        margin-right: 125vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         border: 1px solid #8692A6;
         border-radius: 6px;
         padding: 2vh;
     }
     
-    form #ingredient {
-        width: 150vh;
+    form textarea {
+        width: 80vh;
         height: 50vh;
+        margin-right: 100vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         border: 1px solid #8692A6;
         border-radius: 6px;
     }
@@ -174,9 +180,11 @@
     form #category {
         width: 140px;
         height: 50px;
+        margin-right: 158vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         border: 1px solid #8692A6;
         border-radius: 6px;
-        margin-right: 129vh;
         color: #8692A6;
         padding: 1vh;
         appearance: none;
@@ -190,6 +198,117 @@
         background-color: #EFC81A;
         border: 1px solid #EFC81A;
         border-radius: 5px;
+        margin-left: -80vh;
+        margin-top: 100px;
+        width: 400px;
+        height: 50px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: #EFC81A;
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: #EFC81A;
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: #EFC81A;
+        color: black;
+        margin-left: 1vh;
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-wrapper #photo-profile {
+        margin-top: 3vh;
+        margin-left: 3vh;
+    }
+    
+    form {
+        display: grid;
+        place-items: center;
+        margin-top: 10vh;
+    }
+    
+    form .photo-file {
+        width: 100vh;
+        height: 50vh;
+        margin-right: 80vh;
+        background-image: url('../images/image-4.webp');
+        border-radius: 10px;
+        background-clip: content-box;
+        background-repeat: space;
+        background-size: cover;
+    }
+    
+    form .photo-file input[type="file"] {
+        display: none;
+    }
+    
+    form .photo-file label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 19vh;
+        margin-left: 38vh;
+        width: 25vh;
+        height: 5vh;
+        background-color: #4f8cf5;
+        color: white;
+        border-radius: 6px;
+    }
+    
+    form #title {
+        width: auto;
+        height: 50px;
+        margin-right: 129vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border: 1px solid #8692A6;
+        border-radius: 6px;
+        padding: 2vh;
+    }
+    
+    form textarea {
+        width: 80vh;
+        height: 50vh;
+        margin-right: 100vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border: 1px solid #8692A6;
+        border-radius: 6px;
+    }
+    
+    form #category {
+        width: 140px;
+        height: 50px;
+        margin-right: 158vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border: 1px solid #8692A6;
+        border-radius: 6px;
+        color: #8692A6;
+        padding: 1vh;
+        appearance: none;
+    }
+    
+    form #title:focus, form #ingredient:focus, form #category:focus {
+        outline: none;
+    }
+    
+    form button {
+        background-color: #EFC81A;
+        border: 1px solid #EFC81A;
+        border-radius: 5px;
+        margin-left: 20vh;
         margin-top: 100px;
         width: 400px;
         height: 50px;

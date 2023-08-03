@@ -9,59 +9,118 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
-.title-top {
-    text-align: center;
+@media (max-width: 575px) {
+    .title-top {
+        text-align: center;
+    }
+    
+    .search-bar {
+        margin-left: 19vh;
+    }
+    
+    .category {
+        margin-bottom: 8vh;
+    }
+    
+    .ingredient-popular-recipe {
+        text-align: center;
+    }
+    
+    .ingredient-popular-recipe .account {
+        background-color: transparent;
+    }
+    
+    .ingredient-popular-recipe .reaction-row {
+        width: 65%;
+        margin: auto;
+    }
+    
+    .pagination, .button-next {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 1vh;
+        margin-top: 5vh;
+    }
 }
 
-.search-bar {
-    margin-left: 19vh;
-}
-
-.category {
-    margin-bottom: 8vh;
-}
-
-.ingredient-popular-recipe {
-    text-align: center;
-}
-
-.ingredient-popular-recipe .account {
-    background-color: transparent;
-}
-
-.ingredient-popular-recipe .reaction-row {
-    width: 65%;
-    margin: auto;
-}
-
-.pagination, .button-next {
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: -10vh;
-    align-items: center;
-    gap: 12px;
-}
-
-footer, .footer-motto, .footer-sub-motto {
-    text-align: center;
-    margin-top: 2vh;
-    padding: 20px;
-    background-color: var(--yellow);
-    color: black;
-}
-
-footer, .footer-nav {
-    background-color: var(--yellow);
-    color: black;
-    margin-top: 20vh;
-}
-
-footer .footer-company {
-    background-color: var(--yellow);
-    color: black;
-    margin-left: 1vh;
-    margin-top: 5vh;
+@media (min-width: 576px) {
+    .title-top {
+        text-align: center;
+    }
+    
+    .search-bar {
+        margin-left: 19vh;
+    }
+    
+    .category {
+        margin-bottom: 8vh;
+    }
+    
+    .ingredient-popular-recipe {
+        text-align: center;
+    }
+    
+    .ingredient-popular-recipe .account {
+        background-color: transparent;
+    }
+    
+    .ingredient-popular-recipe .reaction-row {
+        width: 65%;
+        margin: auto;
+    }
+    
+    .pagination, .button-next {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 1vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (min-width: 992px) {

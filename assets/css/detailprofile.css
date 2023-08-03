@@ -10,61 +10,122 @@
     font-family: 'Poppins';
 }
 
-.profile-wrapper a img {
-    margin-left: 17vh;
-    margin-right: 2vh;
+@media (max-width: 575px) {
+    .profile-wrapper a img {
+        margin-left: 17vh;
+        margin-right: 2vh;
+    }
+    
+    .second-nav div form .reaction-count {
+        display: none;  
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .ingredient-popular-recipe {
+        text-align: center;
+        gap: 2vh;
+    }
+    
+    .ingredient-popular-recipe .account {
+        background-color: transparent;
+    }
+    
+    .ingredient-popular-recipe .reaction-row {
+        width: 65%;
+        margin: auto;
+    }
+    
+    .pagination, .button-next {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 1vh;
+        margin-top: 5vh;
+    }
 }
 
-.second-nav div form .reaction-count {
-    display: none;  
-}
-
-hr {
-    display: none;
-}
-
-.ingredient-popular-recipe {
-    text-align: center;
-    gap: 2vh;
-}
-
-.ingredient-popular-recipe .account {
-    background-color: transparent;
-}
-
-.ingredient-popular-recipe .reaction-row {
-    width: 65%;
-    margin: auto;
-}
-
-.pagination, .button-next {
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: -10vh;
-    align-items: center;
-    gap: 12px;
-}
-
-footer, .footer-motto, .footer-sub-motto {
-    text-align: center;
-    margin-top: 2vh;
-    padding: 20px;
-    background-color: var(--yellow);
-    color: black;
-}
-
-footer, .footer-nav {
-    background-color: var(--yellow);
-    color: black;
-    margin-top: 20vh;
-}
-
-footer .footer-company {
-    background-color: var(--yellow);
-    color: black;
-    margin-left: 1vh;
-    margin-top: 5vh;
+@media (min-width: 576px) {
+    .profile-wrapper a img {
+        margin-left: 17vh;
+        margin-right: 2vh;
+    }
+    
+    .second-nav div form .reaction-count {
+        display: none;  
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .ingredient-popular-recipe {
+        text-align: center;
+        gap: 2vh;
+    }
+    
+    .ingredient-popular-recipe .account {
+        background-color: transparent;
+    }
+    
+    .ingredient-popular-recipe .reaction-row {
+        width: 65%;
+        margin: auto;
+    }
+    
+    .pagination, .button-next {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 1vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (min-width: 992px) {

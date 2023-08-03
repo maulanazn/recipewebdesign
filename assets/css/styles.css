@@ -9,49 +9,96 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
-
-.second-navigation h1 {
-    text-align: center;
+@media (max-width: 575px) {
+    .second-navigation h1 {
+        text-align: center;
+    }
+    
+    .second-navigation div {
+        margin-left: 12vh;
+    }
+    
+    .ingredient-popular-recipe h1, .ingredient-popular-recipe .ingredient, .ingredient-popular-recipe a {
+        margin-left: 10vh;
+        margin-top: 2vh;
+    }
+    
+    .info-box {
+        margin-top: 6vh !important;
+    }
+    
+    .recipe-popular-group .recipe-popular-section .recipe-popular-text .recipe-text {
+       font-size: auto;
+       margin-top: 2vh;
+       text-indent: 1px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 3vh;
+        margin-top: 5vh;
+    }
 }
 
-.second-navigation div {
-    margin-left: 19vh;
-}
-
-.ingredient-popular-recipe h1, .ingredient-popular-recipe .ingredient, .ingredient-popular-recipe a {
-    margin-left: 22vh;
-    margin-top: 2vh;
-}
-
-.info-box {
-    margin-top: 6vh !important;
-}
-
-.recipe-popular-group .recipe-popular-section .recipe-popular-text .recipe-text {
-   font-size: auto;
-   margin-top: 2vh;
-   text-indent: 1px;
-}
-
-footer, .footer-motto, .footer-sub-motto {
-    text-align: center;
-    margin-top: 2vh;
-    padding: 20px;
-    background-color: var(--yellow);
-    color: black;
-}
-
-footer, .footer-nav {
-    background-color: var(--yellow);
-    color: black;
-    margin-top: 20vh;
-}
-
-footer .footer-company {
-    background-color: var(--yellow);
-    color: black;
-    margin-left: 3vh;
-    margin-top: 5vh;
+@media (min-width: 576px) {
+    .second-navigation h1 {
+        text-align: center;
+    }
+    
+    .second-navigation div {
+        margin-left: 15vh;
+    }
+    
+    .ingredient-popular-recipe h1, .ingredient-popular-recipe .ingredient, .ingredient-popular-recipe a {
+        margin-left: 22vh;
+        margin-top: 2vh;
+    }
+    
+    .info-box {
+        margin-top: 6vh !important;
+    }
+    
+    .recipe-popular-group .recipe-popular-section .recipe-popular-text .recipe-text {
+       font-size: auto;
+       margin-top: 2vh;
+       text-indent: 1px;
+    }
+    
+    footer, .footer-motto, .footer-sub-motto {
+        text-align: center;
+        margin-top: 2vh;
+        padding: 20px;
+        background-color: var(--yellow);
+        color: black;
+    }
+    
+    footer, .footer-nav {
+        background-color: var(--yellow);
+        color: black;
+        margin-top: 20vh;
+    }
+    
+    footer .footer-company {
+        background-color: var(--yellow);
+        color: black;
+        margin-left: 3vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (min-width: 992px) {

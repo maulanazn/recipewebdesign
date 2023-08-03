@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css"  media="screen">
 </head>
 <body>
-    <nav class="container-fluid row pt-3 nav-top">
-        <a class="col-2 btn" href="../../index.html">Home</a>
-        <a class="col-2 btn" href="../recipe/menurecipe.html">Search Menu</a>
-        <a class="col-2 btn" href="#">Profile</a>
-        <div class="mini-profile col-2 offset-md-4 row">
-        <div class="vr bg-warning" style="padding: 2px;"></div>
-            <mark class="col bg-transparent profile-wrapper">
-                <a href="../profile/detailprofile.html">
-                    <img width="50" height="50" id="photo-profile" loading="eager" decoding="async" src="../../assets/images/elephant.avif" alt="Elephant profile">
-                </a>
-            </mark>
-            <mark class="col bg-transparent logout-detail">
-                <p class="col">Mr. Elephant</p>
-                <a class="fw-bold" id="logout-btn" role="button">Logout</a>
-            </mark>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container-fluid ms-5 gap-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../recipe/addmenu.html">Add menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../recipe/menurecipe.html">Search Menu</a>
+              </li>
+            </ul>
+            <div class="vr bg-warning profile offset-md-6"></div>
+                <mark class="col bg-transparent profile-wrapper">
+                    <a href="../profile/detailprofile.html">
+                        <img loading="eager" width="50" height="50" class="ms-5" decoding="async" id="photo-profile" src="../../assets/images/image-3.webp" alt="Elephant profile">
+                    </a>
+                </mark>
+                <mark class="col bg-transparent logout-detail">
+                    <p class="col">Mr. Elephant</p>
+                    <a class="fw-bold" role="button" id="logout-btn">Logout</a>
+                </mark>
+            </div>
+          </div>
         </div>
     </nav>
 
@@ -32,9 +46,9 @@
             <label for="image-path">Change Photo</label>
         </div>
         <br>
-        <input type="text" name="title" id="title" placeholder="Title">
+        <input accept="image/*" type="text" name="title" id="title" placeholder="Title">
         <br>
-        <input type="text" name="ingredient" id="ingredient" placeholder="Ingredients">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ingredients"></textarea>
         <br>
         <select name="category" id="category">
             <option selected disabled>Category</option>
