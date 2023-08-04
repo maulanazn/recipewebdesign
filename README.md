@@ -5,5 +5,6 @@
 
 ## This is the current screenshot of this recipe web design
 
-[OR IF YOU WANT TO SEE THE FULL PACKAGE OF SCREENSHOT, CLICK THIS SENTENCE NOW](https://imgur.com/gallery/62qRcPz)
-[EDIT MENU PAGE IS UPDATED](https://imgur.com/LzDiP68)
+## UPDATE LISTS, CHECK BELOW:
+### [OR IF YOU WANT TO SEE THE FULL PACKAGE OF SCREENSHOT, CLICK THIS SENTENCE NOW](https://imgur.com/gallery/62qRcPz)
+### [EDIT MENU PAGE IS UPDATED](https://imgur.com/LzDiP68)
