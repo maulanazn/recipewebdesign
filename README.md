@@ -5,6 +5,4 @@
 
 ## This is the current screenshot of this recipe web design
 
-<!-- [laskjdf](https://imgur.com/gallery/62qRcPz) -->
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/62qRcPz"><a href="//imgur.com/62qRcPz">Recipe app web design screenshot</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[OR IF YOU WANT TO SEE THE FULL PACKAGE OF SCREENSHOT, CLICK THIS SENTENCE NOW](https://imgur.com/gallery/62qRcPz)
