@@ -44,7 +44,7 @@ Contributions are what make the open source community such an amazing place to b
 
 | image    |    page    |
 |----------|------------|
-| ![login](public/login.png) | Login | 
+| ![register](public/register.png) | Register | 
 | ![homepage](public/landing.png) | HomePage |
 | ![all recipe](public/all-recipe.png) | All Recipe | 
 | ![user homepage recipe](public/user-recipe.png) | User Homepage Recipe | 
