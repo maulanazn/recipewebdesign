@@ -40,6 +40,15 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin yourbranch`)
 5. Open a Pull Request
 
+## ScreenShot
+
+| image    |    page    |
+|----------|------------|
+| ![login](public/login.png) | Login | 
+| ![homepage](public/landing.png) | HomePage |
+| ![all recipe](public/all-recipe.png) | All Recipe | 
+| ![user homepage recipe](public/user-recipe.png) | User Homepage Recipe | 
+
 ## Related Project
 * [`Mama Recipes Demo`](https://mamarecipeweb.pages.dev/)
 * [`Mama Recipes Rest API`](https://stormy-bass-cloak.cyclic.cloud/)
